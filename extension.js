@@ -17,8 +17,6 @@ function activate(context) {
         while(index >= 0)
         {
           console.log(index);
-          let text = editor.document.getText();
-          //let index = text.indexOf(String.fromCharCode(173));
           let positionStart = editor.document.positionAt(index);
           let positionEnd = new vscode.Position(positionStart.line, positionStart.character + 1);
           let range = new vscode.Range(positionStart, positionEnd)
@@ -38,7 +36,7 @@ function activate(context) {
         console.log("Fertig");
 
 
-        vscode.window.showInformationMessage(ranges.length + ' Zeichen ersetzt :)');
+        vscode.window.showInformationMessage(ranges.length + ' Hyphens replaced :)');
 
     });
 
@@ -46,7 +44,6 @@ function activate(context) {
 }
 exports.activate = activate;
 
-// this method is called when your extension is deactivated
 function deactivate() {
 }
 exports.deactivate = deactivate;
