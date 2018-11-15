@@ -3,8 +3,9 @@
     "displayName": "inDesign and inCopy Cleanup",
     "description": "No more hidden characters, copied from inDesign or inCopy! No more hyphens, where there not should be any. This extension cleans your file!",
     "version": "0.0.1",
+    "publisher": "blickvisual",
     "author": {
-      "name": "BLICK Visual"
+      "name": "Blick Visual"
     },
     "icon": "images/blick.jpg",
     "galleryBanner": {
@@ -20,11 +21,9 @@
         "type": "git",
         "url": "https://github.com/blickvisual/vscode_blickIndesignCleanup.git"
     },
-
-
     "categories": [
       "Formatters",
-      "Others"
+      "Other"
     ],
     "engines": {
         "vscode": "^1.23.0"
